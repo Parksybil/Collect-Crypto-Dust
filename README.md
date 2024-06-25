@@ -15,10 +15,10 @@ This script processes Ethereum and L2 transactions for multiple wallets, sending
 ```bash
 git clone https://github.com/yourusername/crypto-transaction-script.git
 cd crypto-transaction-script
-Install the dependencies:
-bash
-Copy code
+// Install the dependencies:
+
 npm install
+
 Create a file named privatekeys.txt in the root directory of the project. Each private key should be on a new line.
 
 Replace 'your address' in index.js with the recipient address.
@@ -27,6 +27,4 @@ Usage
 
 Run the script using the following command:
 
-bash
-Copy code
 node index.js
