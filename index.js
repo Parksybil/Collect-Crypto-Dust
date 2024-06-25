@@ -1,14 +1,11 @@
-
-#### 2. `index.js`
-
-```javascript
 const { ethers } = require('ethers');
 const fs = require('fs').promises;
 const path = require('path');
 
-const recipientAddress = 'your address';
+const recipientAddress = 'your address'; //add receipient address here
 const providerUrls = [
-    'https://mainnet.base.org'
+    'https://mainnet.base.org',
+    'https://mainnet.optimism.io',
 ]; //crypto rpc, you can add multiple chains
 
 // Function to get dynamic gas price
