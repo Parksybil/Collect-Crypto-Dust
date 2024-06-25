@@ -1,0 +1,24 @@
+{
+  "name": "collect-crypto-dust",
+  "version": "1.0.0",
+  "description": "A script to process Ethereum and L2 transactions for multiple wallets, sending funds to a specified recipient address.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ethers": "^5.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Parksybil/Collect-Crypto-Dust.git"
+  },
+  "keywords": [
+    "ethereum",
+    "crypto",
+    "transaction",
+    "ethers.js"
+  ],
+  "author": "Park Sy Bil",
+  "license": "MIT"
+}
