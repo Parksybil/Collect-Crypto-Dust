@@ -14,7 +14,7 @@ This script processes Ethereum and Layer 2 (L2) transactions for multiple wallet
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/parlsybil/Collect-Crypto-Dust.git
+git clone https://github.com/parlsybil/Collect-Crypto-Dust
 cd Collect-Crypto-Dust
 // Install the dependencies:
 
