@@ -1,5 +1,10 @@
+
+#### 2. `index.js`
+
+```javascript
 const { ethers } = require('ethers');
 const fs = require('fs').promises;
+const path = require('path');
 
 const recipientAddress = 'your address';
 const providerUrls = [
@@ -62,7 +67,18 @@ const processChain = async (providerUrl, privateKeys) => {
 
 const init = async () => {
     try {
-        const privateKeysFile = await fs.readFile('privatekeys.txt', 'utf-8');  //make a file privatekey.txt, each privatekey each line
+        const privateKeysPath = path.join(__dirname, 'privatekeys.txt');
+        
+        // Check if privatekeys.txt exists, create it if it doesn't
+        try {
+            await fs.access(privateKeysPath);
+        } catch (error) {
+            await fs.writeFile(privateKeysPath, '');
+            console.log('Created privatekeys.txt. Please add your private keys, one per line.');
+            return;
+        }
+
+        const privateKeysFile = await fs.readFile(privateKeysPath, 'utf-8');
         const privateKeys = privateKeysFile.trim().split('\n').map(key => key.trim());
 
         for (const providerUrl of providerUrls) {
