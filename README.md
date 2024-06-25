@@ -1,7 +1,8 @@
 
 # Collect Crypto Dust Script
 
-This script processes Ethereum and L2 transactions for multiple wallets, sending funds to a specified recipient address. It fetches the current gas price dynamically and adjusts the gas limit based on the transaction estimation.
+This script processes Ethereum and Layer 2 (L2) transactions for multiple wallets, sending funds to a specified recipient address. It fetches the current gas price dynamically and adjusts the gas limit based on the transaction estimation.
+
 
 ## Prerequisites
 
@@ -13,8 +14,8 @@ This script processes Ethereum and L2 transactions for multiple wallets, sending
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/crypto-transaction-script.git
-cd crypto-transaction-script
+git clone https://github.com/parlsybil/Collect-Crypto-Dust.git
+cd Collect-Crypto-Dust
 // Install the dependencies:
 
 npm install
